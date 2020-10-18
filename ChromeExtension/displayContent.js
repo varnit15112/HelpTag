@@ -77,7 +77,6 @@ function fadeOut(){
     fadeOutEffect(cancelButton.parentNode);
 }
 
-
 // Event Handling for Click
 var logoClickHandlingDisplay = event => {
     var tagsInPost = event.path[12].querySelectorAll('.css-4rbku5.css-18t94o4.css-901oao.css-16my406.r-1n1174f.r-1loqt21.r-1qd0xha.r-ad9z0x.r-bcqeeo.r-qvutc0');
@@ -89,7 +88,7 @@ var logoClickHandlingDisplay = event => {
         div.style.width = "370px";
         div.style.position = "absolute";
         div.style.marginLeft = "75px";
-        div.style.marginTop = "-14px";
+        div.style.marginTop = "-45px";
         div.setAttribute('class', 'infoBar')
 
         var d = document.createElement('div');
@@ -148,6 +147,9 @@ var logoClickHandlingDisplay = event => {
                 return d.toLowerCase() == tag.innerText.toLowerCase();
             })) {
                 tag.style.color = "#FF4747";
+                tag.style.backgroundColor = "#FF47471F";
+                tag.style.borderRadius = "8px";
+                tag.style.padding = "2px";
             }
         }
 
@@ -158,6 +160,8 @@ var logoClickHandlingDisplay = event => {
 
         for (var tag of tagsInPost) {
             tag.style.color = "#1b95e0";
+            tag.style.backgroundColor = "#fff";
+            tag.style.padding = "none";
         }
     }
 

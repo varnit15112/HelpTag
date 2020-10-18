@@ -36,7 +36,7 @@ var logoClickHandlingInput = (event) => {
         div.style.width = "370px";
         div.style.position = "absolute";
         div.style.marginLeft = "45px";
-        div.style.marginTop = "-14px";
+        div.style.marginTop = "-70px";
         div.style.left = "100%";
         div.setAttribute('class', 'infoBar');
 
@@ -84,11 +84,6 @@ var logoClickHandlingInput = (event) => {
         event.target.setAttribute('click-state', 'unclicked');
         document.querySelector('.infoBar').remove();
     }
-
-
-
-    removeOverflowInput();
-
 }
 
 // Create logo element in DOM
@@ -103,13 +98,4 @@ var createLogoInput = () => {
   image.setAttribute("click-state", "unclicked");
 
   return image;
-}
-
-// Overwriting overflow
-var removeOverflowInput = () => {
-    console.log("FAFAFAFAFAFAFAFAFAFAFA");
-    var parentDiv = document.querySelector('.notranslate.public-DraftEditor-content');
-    console.log(parentDiv);
-    // parentDiv.style.overflow = "visible";
-    // document.querySelector('.public-DraftStyleDefault-block.public-DraftStyleDefault-ltr').style.overflow = "visible !important";
 }
