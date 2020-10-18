@@ -4,17 +4,18 @@ Learning ways to contribute to a movement or a cause that you see on Twitter
 
 ## Installation Notes
 
-1. Clone the HelpTag repository
+1. Clone the Repository
 -In your terminal, navigate to your main projects folder (e.g. Documents).
 -Use this command: ```git clone https://github.com/varnit15112/HelpTag.git```.
 -```cd HelpTag```
 
-2. Run local development server
-- In your terminal, type in ```cd Templates```
+2. Run a Local Development Server
+- Browese to the tempplate, type in 
+  ```cd Templates```
 - Initiate a local development server. If you use python, the command is ```python -m SimpleHTTPServer 8000```
 - Make sure you run the server on port 8000
 
-3. Add Chrome Extension to browser
+3. Add the Chrome Extension to your Browser
 - Use the chrome omnibox and navigate to ```chrome://extensions```
 - Turn on developer mode
 - Load unpacked extension. When prompted, navigate to the HelpTag root director, and upload the folder titled ```Chrome Extension```
