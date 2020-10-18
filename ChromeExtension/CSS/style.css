@@ -60,7 +60,9 @@ iframe {
     fill: #fff;
 }
 
-
-.public-DraftEditor-content{
+.DraftEditor-editorContainer, .DraftEditor-root, .public-DraftEditor-content{
+    overflow: visible !important ;
+}
+.public-DraftStyleDefault-block{
     overflow: visible !important ;
 }

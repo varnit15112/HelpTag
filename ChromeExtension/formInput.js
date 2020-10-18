@@ -62,6 +62,7 @@ var logoClickHandlingInput = (event) => {
         var img = document.createElement('img');
         img.src = chrome.extension.getURL('cross.svg');
 
+
         var sourceString = 'http://localhost:8000/InputTemplate/home.html';
         var iframe = document.createElement('iframe');
         iframe.src = sourceString;
