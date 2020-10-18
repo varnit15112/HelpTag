@@ -6,11 +6,13 @@ Learning ways to contribute to a movement or a cause that you see on Twitter
 ## Overview
 Meet HelpTag! A Chrome extension that adds subtle enhancements to your Twitter experience which allows you to quickly browse through actionable, crowdsourced links related to a hashtag that you see on your feed. If a particular hashtag on your feed is being used for a particular movement or cause, our extension would allow you to explore ways you can contribute to what’s going on out there. Categories such as ‘Donate’ and ‘Volunteer’ allow you to browse through links within the contribution method of your liking.
 
+### Exploring Hashtag 
 
+![alt text](https://github.com/varnit15112/HelpTag/blob/main/display.png =50x)
 
-![alt text](https://github.com/varnit15112/HelpTag/blob/main/display.png?raw=true)
+### Adding Information
 
-![alt text](https://github.com/varnit15112/HelpTag/blob/main/create.png?raw=true)
+![alt text](https://github.com/varnit15112/HelpTag/blob/main/create.png =50x)
 
 
 
