@@ -38,7 +38,6 @@ $(document).ready(function() {
         var category = $('#category-selector').val();
 
         for (var tag of hashTagArray) {
-            // console.log(tag, title, link, category);
             pushData(tag.toLowerCase(), title, link, category);
         }
     });
@@ -59,10 +58,6 @@ $(document).ready(function() {
 
     var selector = document.getElementById("tag-selector");
 
-    // while (selector.firstChild) {
-    //     parent.removeChild(parent.firstChild);
-    // }
-
     var hashTags = location.href.split('?')[1].split("=")[1];
     var allTags = hashTags.split("#");
 
@@ -76,8 +71,6 @@ $(document).ready(function() {
 
         }
     }
-
-    console.log(selector);
     onTagInit();
 
 });
@@ -106,6 +99,7 @@ function updateChildUI(){
     if(allDonateLinks.size==0){
         parent.style.display = "none";
     }else{
+        allDonateLinks = new Map([...allDonateLinks.entries()].sort((a,b) => b[1].score - a[1].score).slice(0,4));
         parent.style.display = "block";
 
         if(found==0){
@@ -129,6 +123,7 @@ function updateChildUI(){
     if(allVolunteerLinks.size==0){
         parent.style.display = "none";
     }else{
+        allVolunteerLinks = new Map([...allVolunteerLinks.entries()].sort((a,b) => b[1].score - a[1].score).slice(0,4));
         parent.style.display = "block";
 
         if(found==0){
@@ -152,6 +147,7 @@ function updateChildUI(){
     if(allPetitionLinks.size==0){
         parent.style.display = "none";
     }else{
+        allPetitionLinks = new Map([...allPetitionLinks.entries()].sort((a,b) => b[1].score - a[1].score).slice(0,4));
         parent.style.display = "block";
 
         if(found==0){
@@ -175,6 +171,7 @@ function updateChildUI(){
     if(allEventLinks.size==0){
         parent.style.display = "none";
     }else{
+        allEventLinks = new Map([...allEventLinks.entries()].sort((a,b) => b[1].score - a[1].score).slice(0,4));
         parent.style.display = "block";
 
         if(found==0){
@@ -198,6 +195,7 @@ function updateChildUI(){
     if(allLearnMoreLinks.size==0){
         parent.style.display = "none";
     }else{
+        allLearnMoreLinks = new Map([...allLearnMoreLinks.entries()].sort((a,b) => b[1].score - a[1].score).slice(0,4));
         parent.style.display = "block";
 
         if(found==0){
@@ -216,10 +214,4 @@ function updateChildUI(){
         }
 
     }
-
-    console.log(allDonateLinks);
-    console.log(allVolunteerLinks);
-    console.log(allPetitionLinks);
-    console.log(allEventLinks);
-    console.log(allLearnMoreLinks);
 }
