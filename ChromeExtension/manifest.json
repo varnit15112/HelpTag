@@ -1,0 +1,28 @@
+{
+    "name": "HelpTag",
+    "version": "1.0",
+    "description": "Learning ways to contribute to a movement or a cause that you see on Twitter",
+    "permissions": [
+        "declarativeContent",
+        "activeTab",
+        "<all_urls>",
+        "storage"
+        ],
+    "content_scripts": [
+    {
+        "matches": ["https://*.twitter.com/*"],
+        "js": ["firebase.js","formInput.js", "displayContent.js", "manageFirebase.js"],
+        "all_frames": false,
+        "run_at":"document_idle"
+    }],
+    "page_action": {
+        "default_popup": "interactable.html"
+    },
+    "manifest_version": 2,
+    "web_accessible_resources": ["helptag.svg"],
+    "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+    "icons": {
+        "18": "helptag.svg"
+    }
+
+}
