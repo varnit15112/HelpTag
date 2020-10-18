@@ -22,10 +22,10 @@ Meet HelpTag! A Chrome extension that adds subtle enhancements to your Twitter e
 
 1. Clone the Repository 
 
--In your terminal, navigate to your main projects folder (e.g. Documents).
+- In your terminal, navigate to any folder (e.g. Documents).
 
--Use this command: ```git clone https://github.com/varnit15112/HelpTag.git```.
--```cd HelpTag```
+- Use this command: ```git clone https://github.com/varnit15112/HelpTag.git```.
+- ```cd HelpTag```
 
 2. Run a Local Development Server
 
