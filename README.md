@@ -8,11 +8,11 @@ Meet HelpTag! A Chrome extension that adds subtle enhancements to your Twitter e
 
 ### Exploring Hashtag 
 
-![alt text](https://github.com/varnit15112/HelpTag/blob/main/display.png?raw=true =50x)
+![alt text](https://github.com/varnit15112/HelpTag/blob/main/display.png?raw=true)
 
 ### Adding Information
 
-![alt text](https://github.com/varnit15112/HelpTag/blob/main/create.png?raw=true =50x)
+![alt text](https://github.com/varnit15112/HelpTag/blob/main/create.png?raw=true)
 
 
 
