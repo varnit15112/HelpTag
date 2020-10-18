@@ -79,6 +79,9 @@ function fadeOut(){
 
 // Event Handling for Click
 var logoClickHandlingDisplay = event => {
+
+    event.stopPropagation();
+
     var tagsInPost = event.path[12].querySelectorAll('.css-4rbku5.css-18t94o4.css-901oao.css-16my406.r-1n1174f.r-1loqt21.r-1qd0xha.r-ad9z0x.r-bcqeeo.r-qvutc0');
     var tagsToShow = event.path[8].getAttribute('relevant-tag').split(' ');
 
